@@ -18,9 +18,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.steel.activiti.StartService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring/*.xml"})
+@ContextConfiguration({"classpath*:spring/*.xml"})
 public class SpringProcessTestMyProcess {
-	private String filename = "D:/workspace/xlcompanywork/ActivitiDemo/src/main/resources/diagrams/MyProcess.bpmn";
+	private String filename = "D:/workspace/git/ActivitiDemos/ActivitiDemo/src/main/resources/diagrams/MyProcess.bpmn";
 	@Autowired
 	RepositoryService repositoryService ;
 	@Autowired

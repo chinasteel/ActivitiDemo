@@ -24,7 +24,7 @@ public class StartService {
 	@Transactional
 	public void hello() throws FileNotFoundException {
 		repositoryService.createDeployment().addInputStream("myProcess.bpmn20.xml",
-				new FileInputStream("D:/workspace/xlcompanywork/ActivitiDemo/src/main/resources/diagrams/MyProcess.bpmn")).deploy();
+				new FileInputStream("D:/workspace/git/ActivitiDemos/ActivitiDemo/src/main/resources/diagrams/MyProcess.bpmn")).deploy();
 		// here you can do transactional stuff in your domain model
 		// and it will be combined in the same transaction as
 		// the startProcessInstanceByKey to the Activiti RuntimeService
