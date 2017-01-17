@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
+import org.activiti.engine.TaskService;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,6 +28,8 @@ public class SpringProcessTestMyProcess {
 	RuntimeService runtimeService;
 	@Autowired
 	StartService startService;
+	@Autowired
+	TaskService taskService;
 	
 	@Test
 	public void startProcess() throws Exception {

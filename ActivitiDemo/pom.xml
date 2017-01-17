@@ -35,6 +35,16 @@
 		<artifactId>mysql-connector-java</artifactId>
 		<version>5.1.36</version>
 	</dependency>
+	<dependency>
+	    <groupId>org.drools</groupId>
+	    <artifactId>drools-core</artifactId>
+	    <version>6.5.0.Final</version>
+	</dependency>
+	<dependency>
+    <groupId>org.drools</groupId>
+	    <artifactId>knowledge-api</artifactId>
+	    <version>6.5.0.Final</version>
+	</dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>

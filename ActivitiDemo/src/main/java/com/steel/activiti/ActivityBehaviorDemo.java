@@ -13,6 +13,7 @@ public class ActivityBehaviorDemo implements ActivityBehavior {
 	@Override
 	public void execute(ActivityExecution execution) throws Exception {
 		System.out.println("ActivityBehavior execute..");
+		execution.setVariable("steels", "steels");
 		Object variableName = execution.getVariable("name");
 		System.out.println("variableName:" + variableName);
 	}

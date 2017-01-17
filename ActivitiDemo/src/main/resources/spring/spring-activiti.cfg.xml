@@ -15,9 +15,9 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf-8" />
-		<property name="username" value="sop" />
-		<property name="password" value="sop" />
+		<property name="url" value="jdbc:mysql://172.16.2.91:3306/test?useUnicode=true&amp;characterEncoding=utf-8" />
+		<property name="username" value="lbdbadmin" />
+		<property name="password" value="Ec1tsquf" />
 	</bean>
 
 	<bean id="transactionManager"
@@ -30,6 +30,14 @@
 		<property name="transactionManager" ref="transactionManager" />
 		<property name="databaseSchemaUpdate" value="true" />
 		<property name="jobExecutorActivate" value="false" />
+		<property name="deploymentResources" value="classpath*:diagrams/*.bpmn" />
+		<!-- 发布模式 -->
+		<property name="deploymentMode" value="single-resource"></property>
+		<!-- 启动发布是否生成图片 -->
+		<property name="createDiagramOnDeploy" value="true" />
+		<!-- 调节字体 -->
+		<property name="activityFontName" value="Arial"></property>
+		<property name="labelFontName" value="Arial"></property>
 	</bean>
 
 	<!-- 自定义工厂需要实现 FactoryBean 接口-->
